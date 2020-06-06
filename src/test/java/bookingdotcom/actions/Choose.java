@@ -13,7 +13,8 @@ public class Choose implements Interaction {
     private String destination;
 
     public static Choose aDestination(String destination) {
-        return new Choose(destination);
+        //return new Choose(destination);
+        return instrumented(Choose.class, destination);
     }
 
     public Choose(String destination){
